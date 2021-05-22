@@ -1,0 +1,223 @@
+\documentclass[preprint,pre,aps,superscriptaddress,a4paper]{revtex4}
+\usepackage[dvips]{graphicx}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{float}
+
+\usepackage{epsfig,amsmath,amsfonts,amssymb,
+color,
+%hyperref 
+}
+\usepackage{siunitx}
+\usepackage{comment}
+\begin{document}
+
+\title{
+Shear viscosity of ferrofluids in external
+uniform electric field%of water and organic liquid
+}
+
+\author{Faezeh Pousaneh$^{\scriptscriptstyle{}}$\footnote{Corresponding
+    author. Electronic address: \texttt{faezeh.pousaneh@ntnu.no}.}}  
+%\affiliation{dsfsf}
+%
+%
+\author{Astrid de Wijn  }
+\affiliation{Department of Mechanical and Industrial Engineering, Norwegian University of
+Science and Technology, 7491 Trondheim, Norway}
+
+
+
+\begin{abstract}
+
+\end{abstract}
+\maketitle
+\maketitle
+
+
+
+\section{Introduction}
+
+In  presence of applied uniform electric field $ \boldsymbol E$, the energy between two DHSs $i$ and $j$ with diameter $\sigma$ and dipole moments $\mu$ at distance $r$ is given by a sum of hard sphere ($U_{ij}^{HS}$), dipolar ($U_{ij}^{D}$ ) and interaction energy  due to applied field ($U_{i}^{E}$ ) :
+\begin{eqnarray}
+U_{ij}^{HS}= \begin{cases} 
+\infty; \hspace{1.77cm}  r<    \sigma \\
+  0  ; \hspace{2cm}     r \geq   \sigma
+  \end{cases}
+  ~,\\
+U_{ij}^D= \bigg[\frac{  \boldsymbol \mu_i \cdot \boldsymbol \mu_j }{r_{ij}^3}  - \frac{3( \boldsymbol\mu_i \cdot  \boldsymbol r_{ij})( \boldsymbol\mu_j \cdot  \boldsymbol r_{ij})}{r_{ij}^5} \bigg]~,
+  \\
+U_i^E= -\boldsymbol \mu_i \cdot \boldsymbol E~,
+\end{eqnarray} 
+with the dipolar coupling constant $\lambda= {\mu^2}/({k_B T  4\pi \epsilon_0 \sigma^3})$.The dipole-field interaction is measured by Langevin parameter $\alpha= \mu E/k_BT$.
+\section{Shear viscosity of DHS in presence of uniform electric field}
+In order to derive the analytical kinetic theory for the viscosity of the dipolar hard spheres (DHS) in presence of uniform electric field, we follow the same method proposed in Ref.~\cite{faezehastrid} for DHS.  The analytical predictions of viscosity and RDF of DHS obtained in Ref.\cite{faezehastrid}, witch is based on Enskog's extension of the Boltzmann equation to high densities (BEk), gives very good agreement with simulations results. Thus, we apply same method for DHS in presence of field. 
+We briefly explain the method proposed by Pousaneh {\it {et al.}} below. 
+They start from Enskog's expression for the viscosity ~\cite{Chapman:52:0,Santos:16:0,Viswanath:07:0,Sengers:00:0,Lucas:79:0}
+\begin{equation}
+\eta= \eta_0 \bigg [ g(\xi)^{-1}+0.8 V_\mathrm{excl} \rho + 0.776~ V^2_\mathrm{excl} \rho^2 g(\xi) \bigg]~,
+\label{eq:ENSHS}
+\end{equation} 
+where $V_\mathrm{excl} $ is the excluded volume of HS,  $V_\mathrm{excl}=(2\pi/3) \sigma^3 $, $\xi= \pi \sigma^3 \rho/6$ is the volume fraction,  and $g(\xi)$ is the RDF at contact. $\eta_0$ is the zero-density limit for viscosity and the general form of  it is
+\begin{equation}
+\eta_0=\frac{5}{16\sigma^2 \Omega^{*(2,2)}}\sqrt{\frac{mk_B T}{\pi}}~,
+\label{eq:eta0}
+\end{equation} 
+where ${\Omega^{*(2,2)}}$  is the collision integral  which  depends on the interactions.
+For HS, ${\Omega^{*(2,2)}}=1$.
+The RDF  is the spherical component of the pair-distrition function and for  case of HS from   Carnahan-Starling equation~\cite{Carnahan:69:00} it follows
+\begin{equation}
+g_\mathrm{HS}(\xi) = \frac{ 1 - \frac12 \xi}{(1-\xi)^3}~.\label{eq:CSRDF}
+\end{equation}
+Pousaneh {\it {et al.}} calculated the RDF of DHS using the method  of~\cite{Madden:78:00,Lee:89:0,Kusalik:88:0,patey:85:00}
+from the Helmholtz free energy of DHS derived by Elfimova {\it {et al.}}~\cite{Elfimova:16:00}. They then plunged in the obtained RDF in Eq.~\ref{eq:ENSHS} and derived the analytical expression for the viscosity of DHS. We follow the same procedure below.
+
+We first need to obtain the RDF  for DHS in presence of unifrom electric field $\bold E$. We calculate the RDF using the method  of~\cite{Madden:78:00,Lee:89:0,Kusalik:88:0,patey:85:00,faezehastrid}
+from the Helmholtz free energy of DHS derived by Elfimova {\it {et al.}}~\cite{Elfimova:13:01,Elfimova:17:01}. The Helmholtz free energy of N particle DHS with volume $V$ in the applied field $E$ can be written as 
+\begin{equation}
+ F^\mathrm{DHS} =F^\mathrm{HS} + F^\mathrm{D},
+\end{equation}
+where  $ F^\mathrm{D}$ is the excess free energy due to the electrostatic interaction between the dipoles and interaction between dipoles and the applied field. The latter equation can be written in the framework of virial expansion as
+\begin{equation}
+\frac{\beta F^\mathrm{DHS}}{N} =\frac{\beta F^\mathrm{HS}}{N}-\ln\Psi+\bigg [1+  \sum_{n=1}^{\infty} n^{-1} \Delta B_{n+1} \xi^n\bigg ].
+\end{equation}
+where $\Psi=\mathrm {sinh(\alpha)/\alpha}$. The term $-N\ln \Psi/\beta $ is the free energy of ideal paraelectric gas. $\Delta B_{n+1}$ are differences between virial coefficients  of  DHS and HS.
+
+For DHS the virial series have very slow convergences with alternating signs of $B_n$, which makes it difficult to get better accuracy simply by adding extra terms.  
+In order to get around this problem, Elfimova {\it et al.}~\cite{Elfimova:12:00} introduced a logarithmic representation of the free energy.  The result converges faster, since the logarithm of a polynomial is less sensitive to the truncation of the polynomial. 
+The excess free energy is then written as~\cite{Elfimova:17:00,Elfimova:13:02}
+
+ \begin{equation}
+\frac{\beta F^\mathrm{D}}{N} =-\ln\Psi-\ln \bigg [1+  \sum_{n=1}^{\infty} n^{-1} I_{n} \xi^n\bigg ].
+\end{equation}
+The coefficients $I_n$ are obtained from the regular virial coefficients for DHS.
+Elfimova {\it et al.}~\cite{Elfimova:17:00} keep up to the third virial coefficient, corresponding to $n=2$ and give explicit expressions for $I_{1,2}$.
+This theory accurately captures the free energy and compares favorably with computer simulation for $\lambda \le 2$.
+
+
+We obtain the RDF from the DHS free energy using the equation of state (EOS) \cite{Lee:89:0,Pippo:77:00},
+\begin{equation}
+\frac{PV}{Nk_BT} =1+ \frac{\langle U_\mathrm{pot} \rangle }{Nk_BT} + \frac{2\pi \rho}{3} \sigma^3 g(\xi)~,%= Z \xi,
+\label{kusalik}
+\end{equation}
+where  $\langle U_\mathrm{pot} \rangle$ is the interaction potential.
+We apply the  thermodynamic relations
+$P=-\frac{\partial  F}{\partial V} \vert_{N,T}$ 
+and
+$\langle  U_\mathrm{int}\rangle=\frac{\partial (\beta F)}{\partial\beta}$
+to obtain the pressure and internal energy. The interaction potential is then obtained as
+\begin{equation}
+\langle  U_\mathrm{pot}\rangle=-\frac{\alpha \coth(\alpha)+1}{\beta}-\frac{J_1(\mu)\xi+J_2(\mu)\xi^2}{1+I_1(\mu)\xi+\frac{1}{2}I_2(\mu)\xi^2}  ,
+\end{equation}
+where $J_i(\mu)= \frac{\mu}{2i}\frac{\partial I_i(\mu) }{\partial\mu} $.
+Finally, we find the RDF at contact
+\begin{equation}
+g(\xi) =\frac{1}{4 \xi} \bigg[Z^{HS}+\alpha \coth(\alpha) +\frac{L_1(\mu)\xi+L_2(\mu)\xi^2}{1+I_1(\mu)\xi+\frac{1}{2}I_2(\mu)\xi^2}   \bigg] ,
+\label{eq:g}
+\end{equation}
+where 
+\begin{equation}
+L_i(\mu)= J_i(\mu) - I_i(\mu).
+\end{equation}
+The viscosity is then obtained by substituting this equation into Eq.~(\ref{eq:ENSHS}).
+We compare our  theoretical results to MD simulations in the next section.
+\section{Simulations}
+We  employ a pseudo hard sphere model (PHS) introduced by Jover {\it {et al.}}\cite{jover:12:0} which is  Mie form potential  where the typical powers of the LJ potential 12/6 are replaced by 50/49:
+\begin{equation}
+U^{(50,49)}(r)=
+  \begin{cases} 
+    50 (\frac{50}{49})^{49}
+    \epsilon \big[ \big(\frac{\sigma}{r}\big)^{50 }-\big(\frac{\sigma}{r}\big)^{49 }  \big]+\epsilon & r<   \frac{50}{49} \sigma \\
+   0 & r \geq   \frac{50}{49} \sigma
+   \label{eqPHS}
+  \end{cases}~.
+\end{equation}
+The potential accurately captures the properties of HS at reduced temperature $T^*= \frac{\epsilon}{k_B T} =2/3$. 
+Moreover, this model has been shown to accurately describe the fluid-solid equilibrium~\cite{vega:13:0} as well as the viscosity of HS~\cite{faezeh:19:00} and viscosity of dipolar hard sphere \cite{faezehastrid}. 
+
+We use Gromacs version 5 to integrate the equations of motion and the PHS potential is implemented as a tabular form as in Ref.~\cite{faezeh:19:00}.
+In  order to simulate the DHS in an uniform electric field, we  use the same model of  DHS as in Ref.~\cite{faezehastrid} which consists of 5 particles on a line Fig.~\ref{DHS-F}. The central particle has no charge or mass connected to two dummy mass particles with mass  $m$  and two massless  particles with charges $q$ and $-q$. The central particle interacts with the central particles of the other DHS through a PHS potential and charged particles interact with other charged particles and also with electric field. The distance between particles are shown in Fig.~\ref{DHS-F}. $L_q/\sigma=0.22$ and $L_q=2L_m$.  The point dipole model has been shown to agree with the extended dipole model up to  $L_q/\sigma=0.3$~\cite{Theiss:19:00,Drunsel:14:00,Ballenegger:04:00}.
+
+We simulate the  system of $N=6000$ DHS for two cases of  dipole moments corresponding to $\lambda=1,2$. All simulations have been carried out at reduced temperature $T^* =\epsilon/k_BT=2/3$.
+For each case of  $\lambda$ we perform simulations for three different electric fields corresponding to $\alpha=1,2,5$ and densities from  $\rho^*$ between $0$ and $1$.
+In what follows, all units are dimensionless as: $t^*=t[ {k_B T}/({\sigma^2 m})]^\frac12$, $r^*= \frac{r}{\sigma}$, $\rho^*= \rho \sigma^3=\xi 6/\pi$ and $P^*=  P \sigma^3/(k_B T)$,  $\mu^*=  \mu (k_B T\sigma^3 4\pi \epsilon_0)^{-\frac12}$, $\lambda= {\mu^*}^2$, $\eta^*=\eta \sigma ^2 /( mk_B T)^\frac12 $, where $\rho$ and $P$  denote number density and  pressure respectively and $\eta$ is viscosity. $\alpha$ is a dimensionless quantity. The reduced volume fraction is $ \xi^*=\frac{\pi \rho^* }{6}$.
+The electrostatic interactions are treated using the Particle Mesh Ewald (PME) method with cut-off length of $2.6 \sigma^*$.
+Time steps for simulations is $\delta t^*=0.0011$.
+
+We first equilibrate the system and verify the compressibility factor, $Z= PV/NK_BT$, by comparision to Ref.~\cite{Elfimova:13:01}.
+Equilibration was performed in the NVT ensemble with the velocity-rescale thermostat for   $t^*= 10^5$  to $t^*=6 \cdot 10^5$ depending on the system.
+Fig.~\ref{com} shows  the  EOS for DHS in precence of elecric field obtained from current simulations (red triangle data), from previous Monte-Carlo simulations~\cite{Elfimova:13:01} (blue circle data) and the theoretical expression of EOS in Ref.~\cite{Elfimova:13:01}.
+Our MD simulations agrees well to both.
+
+
+\begin{figure}
+\includegraphics[scale=1.]{DHS-F.pdf}
+\caption{Schematic representation of the DHS model in an external uniform field. The DHS model is taken from Ref.~\cite{faezeh:19:00}.}
+\label{DHS-F}\vspace{0.1cm}
+\end{figure}
+
+\begin{figure}[th]
+\includegraphics[scale=0.35]{Z_a1,l1_python.eps}
+\includegraphics[scale=0.35]{Z_a2,l1_python.eps}
+\includegraphics[scale=0.35]{Z_a5,l1_python.eps}
+\includegraphics[scale=0.35]{Z_a1,l2_python.eps}
+\includegraphics[scale=0.35]{Z_a2,l2_python.eps}
+\includegraphics[scale=0.35]{Z_a5,l2_python.eps}
+\caption{The equation of state of DHS fluids in presence of electric field from current simulations for (top) $\lambda=1$ and (bottom)  $\lambda=2$. Triangle data are simulation results  and solid lines are from theory by Elfimova {\it {et al.}}~\cite{Elfimova:16:00}. }
+\label{com}
+\end{figure}
+
+\section{Results }
+\subsection{Radial distribution function}
+In order to obtain RDF, we run  the equilibrated systems in the NVT ensemble for an additional interval of $t^*=1000$
+and obtain the  RDF for each  $\lambda$ and $\alpha$ for whole range of densities from $0$ to $1$.
+The RDF at contact is given by the maximum values of RDF.
+Simulation results of RDF at contact are shown in Fig.~\ref{RDF_plots}  along with our theoretical expression Eq.~(\ref{eq:g}), both with  $\sigma=1$.
+\begin{figure}[]
+\includegraphics[scale=0.35]{RDF_a1,l1_python.eps}
+\includegraphics[scale=0.35]{RDF_a2,l1_python.eps}
+\includegraphics[scale=0.35]{RDF_a5,l1_python.eps}
+\includegraphics[scale=0.35]{RDF_a1,l2_python.eps}
+\includegraphics[scale=0.35]{RDF_a2,l2_python.eps}
+\includegraphics[scale=0.35]{RDF_a5,l2_python.eps}
+\caption{RDF of DHS in presence of electric field (top) $\lambda=1$ and (bottom)  $\lambda=2$, for $\alpha=1,2,5$ from simulations (data points) and from theory developed in the present work. }
+\label{RDF_plots}
+\end{figure}
+
+
+\subsection{Shear Viscosity}
+The shear viscosities obtained from the simulations are shown  in Fig.~\ref{DHS_eta} for  $\lambda=1,2$ and $\alpha=1,2,5$. 
+We compare the simulation results to the theoretical results, which are given by Eq.~(\ref{eq:g}) combined with~(\ref{eq:ENSHS}) and~(\ref{eq:eta0}).
+Since we do not have the exact low-density limit for $\eta_0$ for our system, we introduce ${\Omega^{*(2,2)}}$ as a fit parameter. 
+We  estimate the range of sensible values from the results of Ref.~\cite{monchick:61:0} for the Stockmayer potential with a point dipole, to be in the range of $1$ to $3$ corresponding to $\lambda$ up to $\lambda=5$.
+We use an effective dipole moment $\mu_\mathrm{e}$ as a fit parameter, rather than the hard-sphere diameter.
+%This choice was made because the viscosity is mediated by the hard collisions, and as such much more sensitive to the precise diameter and geometry of the hard sphere.
+The fit parameters ${\Omega^{*(2,2)}}$ and $\mu_\mathrm{e}/\mu$ are given in Table.~\ref{fit_eta}.
+The obtained values  of ${\Omega^{*(2,2)}}$ indicates collision integrals increase by increasing the dipole moments in agreement with the trends found for the zero-density viscosity of the Stockmayer potential~\citep{monchick:61:0} and values in the expected range.
+
+\begin{figure}[]
+\includegraphics[scale=0.35]{a1,l1_python.eps}
+\includegraphics[scale=0.35]{a2,l1_python.eps}
+\includegraphics[scale=0.35]{a5,l1_python.eps}
+\includegraphics[scale=0.35]{a1,l2_python.eps}
+\includegraphics[scale=0.35]{a2,l2_python.eps}
+\includegraphics[scale=0.35]{a5,l2_python.eps}
+\caption{Shear viscosity of DHS in presence of electric field (top) $\lambda=1$ and (bottom)  $\lambda=2$, for $\alpha=1,2,5$ from simulations (data points) and from theory developed in the present work. }
+\label{DHS_eta}
+\end{figure}
+
+
+
+\section*{Acknowledgements}
+The work has been supported by National Infrastructure for Computational Science in Norway
+(UNINETT Sigma2) with computer timed for the Center for High Performance Computing (NN9573K and NN9572K). The authors acknowledge The Research Council of Norway for NFR project number 275507  and The Faculty of Engineering, Norwegian University of Science and Technology (NTNU), for financial support. We acknowledge Prof. Ekaterina Elfimova for fruitful discussions and provided data.  
+
+\label{ed}
+
+\bibliography{ref}
+\bibliographystyle{ieeetr}
+\end{document}  
+
+
